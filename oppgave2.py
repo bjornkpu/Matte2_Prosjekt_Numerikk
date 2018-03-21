@@ -16,4 +16,5 @@ def lagA(n):
 	A[n-1, n-4:n]	= B[2, :]
 	return A
 
-print(np.array_str(lagA(10)))
+if __name__ == '__main__':
+	print(np.array_str(lagA(10)))
