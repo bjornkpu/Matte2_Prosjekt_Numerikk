@@ -1,3 +1,4 @@
+Outdated!
 # Matte2_Prosjekt_Numerikk
 #### Dette er koden for prosjektoppgaven i Matematikk 2 Numerikk. Vår 2018
 -----
