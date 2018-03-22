@@ -3,7 +3,7 @@ import numpy as np
 from oppgave2 import lagA
 from konstanter import *
 
-def y(x):
+def lagY(x):
     konstantledd = f / (24 * E * I)
     forsteledd = x ** 2
     andreledd = x ** 2 - 4 * L * x + 6 * (L ** 2)
