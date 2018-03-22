@@ -14,7 +14,7 @@ def ye():
     a = [0 for x in range(0, 10)]
     index = 0
     for i in [float(j) / 10 for j in range(2, 22, 2)]:
-        a[index] += y(i)
+        a[index] += lagY(i)
         index += 1
     return a
 
