@@ -11,6 +11,11 @@ def lagVektor(n):
 if __name__ == "__main__":
     ye = ye()
     v = lagVektor(10)
+    fjerde = fjerdeDeriverte(10)
+    print('\nFjerdederiverte:')
+    for i in fjerde:
+        print(i)
+
     for i in range(0, 10):
         forskjell = ye[i] - f / (E * I)
         print('i', i, '=', forskjell)
