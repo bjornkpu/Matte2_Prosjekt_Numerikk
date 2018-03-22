@@ -27,7 +27,6 @@ def fjerdeDeriverte(n):
 
 
 def printYe():
-
     yePrint = ye()
     out = []
     for i in range(0, len(yePrint)):
@@ -36,15 +35,17 @@ def printYe():
 
 
 if __name__ == "__main__":
-	fjerde = fjerdeDeriverte(10)
-	ye = printYe()
 
-	print('\nYe:')
-	tall = 0.2
-	for i in ye:
-		print('Ye(', round(tall, 1), ')=', i)
-		tall += 0.2
+    fjerde = fjerdeDeriverte(10)
+    ye = printYe()
 
-	print('\nFjerdederiverte:')
-	for i in fjerde:
-		print(i)
+    print('\nYe:')
+    tall = 0.2
+    for i in ye:
+        print('Ye(', round(tall, 1), ')=', i)
+        tall += 0.2
+
+    print('\nFjerdederiverte:')
+    for i in fjerde:
+        print(i)
+
