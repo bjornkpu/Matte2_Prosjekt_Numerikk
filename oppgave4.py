@@ -3,7 +3,6 @@ import numpy as np
 from oppgave2 import lagA
 from konstanter import *
 
-
 def y(x):
     konstantledd = f / (24 * E * I)
     forsteledd = x ** 2
@@ -28,16 +27,7 @@ def fjerdeDeriverte(n):
 
 
 def printYe():
-<<<<<<< HEAD
-	yePrint = ye()
-	for i in range(0, len(yePrint)):
-		print(yePrint[i])
-		print()
 
-if __name__ == "__main__":	
-	printYe()
-	print(fjerdeDeriverte(10))
-=======
     yePrint = ye()
     out = []
     for i in range(0, len(yePrint)):
@@ -46,16 +36,15 @@ if __name__ == "__main__":
 
 
 if __name__ == "__main__":
-    fjerde = fjerdeDeriverte(10)
-    ye = printYe()
+	fjerde = fjerdeDeriverte(10)
+	ye = printYe()
 
-    print('\nYe:')
-    tall = 0.2
-    for i in ye:
-        print('Ye(', round(tall, 1), ')=', i)
-        tall += 0.2
+	print('\nYe:')
+	tall = 0.2
+	for i in ye:
+		print('Ye(', round(tall, 1), ')=', i)
+		tall += 0.2
 
-    print('\nFjerdederiverte:')
-    for i in fjerde:
-        print(i)
->>>>>>> 9fb52f5a3f66edabf3de0c0ac745b77339632f8e
+	print('\nFjerdederiverte:')
+	for i in fjerde:
+		print(i)

@@ -1,10 +1,23 @@
 from konstanter import *
 from oppgave3 import *
+from oppgave4_d import lagVektor
 import numpy as np
 
-number = 20
+def finnFeil(n):
+	volum = L * w * d
+	vekt = volum * p
+	b = np.array([vekt for x in range(n)])
+	y = solveAy(n, b)
+	
+	return y[Lint]
+	
+	
 
-for i in range(0, 10):
-    y = solveAy(number)
-    print(y[0], end='\n\n')
-    number *= 2
+for i in range(1, 12):
+	n = 10*2**i
+	print(n)
+	a = lagVektor(n)
+	feil = finnFeil(n)
+	print(feil)
+	print(feil-a[Lint])
+	print()
