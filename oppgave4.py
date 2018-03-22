@@ -28,16 +28,6 @@ def fjerdeDeriverte(n):
 
 
 def printYe():
-<<<<<<< HEAD
-	yePrint = ye()
-	for i in range(0, len(yePrint)):
-		print(yePrint[i])
-		print()
-
-if __name__ == "__main__":	
-	printYe()
-	print(fjerdeDeriverte(10))
-=======
     yePrint = ye()
     out = []
     for i in range(0, len(yePrint)):
@@ -58,4 +48,4 @@ if __name__ == "__main__":
     print('\nFjerdederiverte:')
     for i in fjerde:
         print(i)
->>>>>>> 9fb52f5a3f66edabf3de0c0ac745b77339632f8e
+
