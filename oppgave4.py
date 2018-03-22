@@ -29,11 +29,22 @@ def fjerdeDeriverte(n):
 
 def printYe():
     yePrint = ye()
+    out = []
     for i in range(0, len(yePrint)):
-        print(yePrint[i])
-        print()
+        out.append(yePrint[i])
+    return out
 
 
 if __name__ == "__main__":
-    print(fjerdeDeriverte(10))
-    printYe()
+    fjerde = fjerdeDeriverte(10)
+    ye = printYe()
+
+    print('\nYe:')
+    tall = 0.2
+    for i in ye:
+        print('Ye(', round(tall, 1), ')=', i)
+        tall += 0.2
+
+    print('\nFjerdederiverte:')
+    for i in fjerde:
+        print(i)
