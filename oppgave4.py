@@ -10,25 +10,25 @@ def y(x):
 	return konstantledd * forsteledd * andreledd
 	
 def ye():
-	ye = [0 for x in range(0,10)]
-	iterate = 0.2
-
-	for i in range(10):
-		ye[i] = y(iterate)
-		iterate += 0.2
-		
-	return ye
+	a = [0 for x in range(0,10)]
+	index = 0
+	for i in [float(j) / 10 for j in range(2, 22, 2)]:
+		a[index] += y(i)
+		index += 1
+	return a
 	
-def fjerdeDeriverte(h):
-	A = lagA(10)
+def fjerdeDeriverte(n):
+	A = lagA(n)
+	h = L/n
 	yee = ye()
-	return 1/h**4 * A * yee
+	return (1/h**4) * A * yee
 
 def printYe():
 	yePrint = ye()
-
 	for i in range(0, len(yePrint)):
 		print(yePrint[i])
 		print()
 
-print(fjerdeDeriverte(10**3))
+if __name__ == "__main__":	
+	print(fjerdeDeriverte(10))
+	printYe()
