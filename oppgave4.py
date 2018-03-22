@@ -30,5 +30,5 @@ def printYe():
 		print()
 
 if __name__ == "__main__":	
-	print(fjerdeDeriverte(10))
 	printYe()
+	print(fjerdeDeriverte(10))
