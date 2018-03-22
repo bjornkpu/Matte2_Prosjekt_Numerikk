@@ -3,7 +3,6 @@ import numpy as np
 from oppgave2 import lagA
 from konstanter import *
 
-
 def y(x):
     konstantledd = f / (24 * E * I)
     forsteledd = x ** 2
@@ -36,6 +35,7 @@ def printYe():
 
 
 if __name__ == "__main__":
+
     fjerde = fjerdeDeriverte(10)
     ye = printYe()
 
